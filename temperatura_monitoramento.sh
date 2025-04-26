@@ -5,13 +5,13 @@ export LC_NUMERIC=C
 limite_sensor1=50
 limite_sensor2=40
 
-token="7728352689:AAGpD7xgNCK7XkhiIhxK39Pz_lf0JUGiWHo"
+token=""
 
-chat_id="1168329992"
+chat_id=""
 
 enviar_telegram() {
 	mensagem=$1
-	curl -s -X POST "https://api.telegram.org/bot7728352689:AAGpD7xgNCK7XkhiIhxK39Pz_lf0JUGiWHo/sendMessage" \
+	curl -s -X POST "https://" \
 		-d chat_id="$chat_id" \
 		-d text="$mensagem"
 }
